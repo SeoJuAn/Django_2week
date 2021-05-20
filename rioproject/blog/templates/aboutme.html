@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+      p { margin:0 auto; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'new' %}">글쓰기</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'aboutme' %}">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <div style="text-align:center">
+        <br>
+        <br>
+        <h4>About 리오</h4>
+        <br>
+        <p>한국항공대학교 소프트웨어학과 3학년</p>
+        <br>
+        <br>
+    </div>
+
+    <div class = 'container'>
+      <div class="row d-flex justify-content-center align-items-center" style="text-align:center">
+          <div class="card" style="width: 20rem;height:30rem;">
+            {% load static %}
+            <img src="{%static 'img/sja.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">증명사진</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem; height:30rem;">
+            {% load static %}
+            <img src="{%static 'img/항공대 소학.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <br>
+              <br>
+              <br>
+              <br>
+              <p class="card-text">한국항공대학교/소프트웨어학과</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;height:30rem;">
+            {% load static %}
+            <img src="{%static 'img/멋쟁이사자처럼_로고.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p class="card-text">멋쟁이사자처럼 9기</p>
+            </div>
+          </div>
+
+          
+      </div>
+  </div>
+</body>
+</html>
+
+
+
+
